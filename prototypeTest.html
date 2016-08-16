@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test von Objekten bzw. Prototypen in Javascript</title>
+</head>
+<body>
+<div id="prototype">
+
+</div>
+
+<script type="text/javascript">
+    // declaration
+    function Car(make, model, year ) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+    Car.prototype.print = function(){
+        return "Auto: (" + "Marke: " + this.make + " Model: " + this.model + " Jahr: " + this.year + " )";
+    };
+    var c = new Car("VW", "Polo", 2007);
+
+    // add to Html
+    document.getElementById("prototype").innerHTML += "Auto 'Objekt': " + c.print();
+</script>
+</body>
+</html>
