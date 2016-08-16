@@ -1,0 +1,57 @@
+div#field {
+    background-color: #edf1f3
+}
+
+div#selectButtons {
+    background-color: #edf1f3
+}
+
+div#characterInfo {
+    background-color: #edf1f3
+}
+
+button.field {
+    background-image:url(images/rahmen.svg);
+    background-size: 100%;
+
+    width: 10%;
+    /*height: 100%; /!* for empty boxes without img*!/*/
+    padding-left: 6px;
+    padding-right: 6px;
+}
+button.player1 {
+    background-color: #337ab6;
+}
+
+button.player2 {
+    background-color: #cd3624;
+}
+
+img.figure {
+    max-width:100%;
+    max-height:100%;
+}
+
+img.icon {
+    height: 32px;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Popover - override Bootstrap Style*/
+/* Popover Header */
+.popover-title {
+    background-color: #3c3f41;
+    color: #a9a9a9;
+    font-size: 28px;
+    text-align:center;
+}
+/* Popover Body */
+.popover-content {
+    background-color: rgb(205, 80, 73);
+    color: #FFFFFF;
+    padding: 25px;
+}
