@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test von Arrays in Javascript</title>
+</head>
+<body>
+    <div id="array">
+
+    </div>
+
+    <script type="text/javascript">
+        // declaration
+        var a = [1, 2, "Horst"];
+        a["7"] = "Rüdiger"; // ist teil der Nummerierten Indexe
+        a["name"] = "Max";   // ist kein nummerierter Index und somit nicht von lenth() erfasst.
+        var arrayLength = a.length; // zählt bis höchstes mit nummerierten Index plus Eins. Hier 7+1 = 8
+
+        // add to html
+        for (var i in a) {
+            document.getElementById("array").innerHTML += "Index: " + i + " Value: " + a[i] + "<br/>" ;
+        }
+        document.getElementById("array").innerHTML += "ArrayLength: " + arrayLength;
+    </script>
+</body>
+</html>
